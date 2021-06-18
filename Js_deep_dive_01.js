@@ -6,7 +6,7 @@
   - Connet: @getify.
   - Learn JavaScript Deeply
     - kyle talks about an example including x++ / ++x.
-    - Kyle says it's essential for a JS developer to understand and have correct mental developers.
+    - Kyle says it's essential for a JS developer to understand and have correct mental models.
     - Read the Spec:  https://262.ecma-international.org/11.0/
     - Deck: 1-4
 */
