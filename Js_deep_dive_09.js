@@ -625,4 +625,5 @@ function notYetPaid(studentId) {
  - Kyles idea here in his solution to make scope flatter tha nested to avoid bugs.
  - put function outside if it is stand alone.
  - put function inside of the same function if it has a dependency on some variable provided by variable.
+ - Using hoisting in a mindful manner.
 */
