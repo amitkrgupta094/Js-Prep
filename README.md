@@ -1,3 +1,3 @@
-# Learn JavaScript Faster and Avoid breaking things.
+# Learn JavaScript Faster and avoid breaking things.
 
 
