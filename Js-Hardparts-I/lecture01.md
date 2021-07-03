@@ -1,5 +1,5 @@
-  start:![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-  JavaScript Hard Parts
+  ## JavaScript Hard Parts :![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+  
   
   ### Topics:
   - JavaScript Principles (How Js runs its code)
