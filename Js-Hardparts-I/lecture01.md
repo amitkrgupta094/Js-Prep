@@ -15,7 +15,7 @@
     They will solve it.
     
   - Mid Level Engineer:
-   - Takes a problem and knows how to solve it.
+    - Takes a problem and knows how to solve it.
    
   - Senior Level Engineer:
     - Takes a problem, solves it and also enables member of team to understand it and expand on it. [Technical Communication is important.]  
