@@ -142,3 +142,99 @@ myNameFunction(); // 1
 
 
 // Lecture 6: Closure QnA
+/*
+  Function Decorator:
+  We can pass a function to another function + use closure to
+  access the argument passed in the actual function and make
+  passed function behave same + more like HOF.
+  
+  Closure usecases :
+  I.  Currying
+  II. Partials
+  III.Decorators
+  
+  
+  Where does Scope come into play?
+  - watch next lesson.
+  
+  - Learn more about JS debuuger.
+  Bagback Data Important Note:
+  - Only things that get referenced inside of returning function It would be saved on bagback of function.
+  
+  Memory Leak:
+  Data that gets saved inside of memory but we can't access
+  it anymore.
+*/
+
+
+
+// Lecture 7: Closure Technical Definition & Review
+/*
+ Local Memory:
+ It is also called variable environment.
+ 
+ [[SCOPE]] (bagpack):
+ closed over variable environment.
+ The data inside of bagpack gets persisted which is liked 
+ by scope property.
+ P.L.S.R.D.
+ 
+ In Industry the colloqial term is Put the data in the function 
+ closure.
+ 
+ 
+ Scope:
+ Rules that say what data is available to me running any
+ line of code.
+ 
+ Scope Rule:
+ It is called statical or Lexical Scoping. Where I save my
+ function determines for the rest of that life, for the life of that function whenever it gets run whatever label it gets what daya it will have access to when that function runs.
+ 
+*/
+
+
+// Lecture 8: Multiple Closure Instances
+/*
+ - Every instance of closure gets it owns bagpack.
+*/
+
+function outer() {
+  let counter = 0;
+  function incrementCounter() {
+    counter ++;
+    console.log(counter);
+  }
+  
+  return incrementCounter;
+}
+
+
+const myNewFunction = outer();
+myNewFunction();
+myNewFunction();
+
+const anotherFunction = outer();
+anotherFunction();
+anotherFunction();
+
+
+// Lecture 9: Practical Applications
+
+/*
+  Helper Function: 
+   "Once": Any app when we want to lock down a function.
+   "Memoize": Say nth prime number, giving our function persistent memory.
+   
+  Iterators and Generators:
+  
+  Module Pattern:
+  
+  
+  Async JavaScript:
+*/
+
+
+// Lecture 10: Closure Exercise
+
+// http://csbin.io/closures
