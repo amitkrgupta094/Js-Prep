@@ -16,7 +16,6 @@ handleSubmit = (e) => {
  }
  
  // Example 2: Don't do this
- // Example 1
 handleSubmit = (e) => {
         this.setState({submitSpin: true});
         //... more code
