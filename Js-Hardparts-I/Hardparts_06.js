@@ -360,3 +360,33 @@ console.log(makeUser2.prototype);
 const madeUser2 = new makeUser2("Ravi",26);
 madeUser2.increment();
 madeUser2.score; // 27
+
+// Lecture 13: class keyword
+
+/*
+Solution 3: new keyword + prototype property
+- new keyword automates a lot of work.
+- if we run function run without new keyword, this would be global object.
+- Capitalise your constructor function.
+
+Solution 4: The class "syntactic" sugar
+- check the notes
+- It runs function constructor.
+- Under the hood it is different than other languages.
+
+*/
+
+class UserCreator {
+  constructor(name, score){
+    this.name = name;
+    this.score = score;
+  }
+  
+  increment() {this.score++;}
+  login(){ console.log("login"); }
+}
+
+const user1 = new UserCreator("Eva", 9);
+user1.increment();
+user1.score; // 10
+
