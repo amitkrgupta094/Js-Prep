@@ -48,7 +48,7 @@ Headers { "Content-Type": "application/json",  "Accept": "application/json"�
 -  more setState call => more render cycles => performance impact
 
 
-### By default your images would draggable
+### By default your images (created using <img /> tag) would draggable
 - if you don't want that : (1) You can disable using css (has glitch) (2) use draggable="false" attribute on your images.
 - Read more about it here: https://stackoverflow.com/questions/12906789/preventing-an-image-from-being-draggable-or-selectable-without-using-js
 
