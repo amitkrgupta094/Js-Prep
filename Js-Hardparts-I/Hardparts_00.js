@@ -4,7 +4,8 @@
   - JavaScript Principles (How Js runs its code)
   - Callbacks & Higher Order functions
   - Closure
-  - OOP: Classes/Prototypes & Asynchronity
+  - OOP: Classes/Prototypes 
+  - Asynchronity
   
   
   # Why understanding JS deep is important?
