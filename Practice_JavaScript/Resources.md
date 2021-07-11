@@ -49,7 +49,8 @@ QnA on Js:
 
 
 Useful Tips:
-https://xjamundx.medium.com/understanding-amazons-front-end-engineering-interview-5e9f38b58058
-https://leetcode.com/discuss/interview-question/742791/front-end-interview-questions
-https://leetcode.com/discuss/interview-question/1074798/frontend-interview-preparation-resources-1-4-years-exp
+- https://xjamundx.medium.com/understanding-amazons-front-end-engineering-interview-5e9f38b58058
+- https://leetcode.com/discuss/interview-question/742791/front-end-interview-questions
+- https://leetcode.com/discuss/interview-question/1074798/frontend-interview-preparation-resources-1-4-years-exp
+- https://medium.com/@vinayakvvg/frontend-engineer-interview-experience-amazon-bdf8b3d66d40
 
