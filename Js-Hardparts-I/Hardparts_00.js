@@ -9,7 +9,7 @@
   
   
   # Why understanding JS deep is important?
-  - You would able to build things using knowledge of atoms. 
+  - You would able to build things using these atoms of knowledge. 
   
   
   # Different Levels of Engineers & Technical Communication:
