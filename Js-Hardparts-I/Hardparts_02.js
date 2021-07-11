@@ -3,13 +3,12 @@
 // Lecture 1: Generalized Functions
 /*
   # Why even we have a function?
-   - Example 1 & Example 2, we made function but it seems to repeating itself, same logic.
-   - This breaks DRY principle (DO NOT REPEAT PRINCIPLE). write code once and use it again and again.
-   - Parameters (placeholders) mean we don't need to decide what data to run
-   our functionality until we run the function.
+   - Example 1 & Example 2, we made function but it seems to repeat itself, same logic.
+   - This breaks DRY principle (DO NOT REPEAT YOURSELF PRINCIPLE). write code once and use it again and again.
+   - Parameters (placeholders) mean we don't need to decide what data to run until we call the function.
    - Then provide an actual value ('argument') when we run the function.
    - Higher order function does same here it takes functionality (another function) as parameter and use when we run the function.
-   - So you can have data and functionality figured out at runtime which makes function really really ppwerful too.
+   - So you can have data and functionality figured out at runtime which makes function really really powerful.
   
 */
 
