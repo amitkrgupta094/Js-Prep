@@ -1,12 +1,12 @@
 Practice JavaScript Here:
 
 
-http://csbin.io/callbacks 
-http://csbin.io/closures
-https://javascript.info/
-https://www.freecodecamp.org/ 
-https://www.jschallenger.com/start
-http://www.asmarterwaytolearn.com/js/index-of-exercises.html
+- http://csbin.io/callbacks 
+- http://csbin.io/closures
+- https://javascript.info/
+- https://www.freecodecamp.org/ 
+- https://www.jschallenger.com/start
+- http://www.asmarterwaytolearn.com/js/index-of-exercises.html
 - https://practity.com/582-2/ [So many practice resource here so avoid]
 
 Polyfills (Know more about this & prototype in Js)
