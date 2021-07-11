@@ -5,6 +5,8 @@ Practice JavaScript Here:
 - http://csbin.io/closures
 - http://csbin.io/async
 - http://csbin.io/oop
+- http://csbin.io/iterators
+- http://csbin.io/promises
 - https://javascript.info/
 - https://www.freecodecamp.org/ 
 - https://www.jschallenger.com/start
