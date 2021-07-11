@@ -56,10 +56,10 @@ const newOutput = multiplyBy2(10);
 
 
 // Example 1
-// const tweets = getTweet("http://twitter.com/will/i");
+const tweets = getTweet("http://twitter.com/will/i");
 
-// 350ms wait while a request is sent to Twitter HQ
-// displayTweets(tweets);
+350ms wait while a request is sent to Twitter HQ
+displayTweets(tweets);
 
 // more code to run
 console.log("I want to runn!");
@@ -80,7 +80,7 @@ console.log("Me First");
 
 // Lecture 3: Asynchronous Browser Features
 /*
- JavaScript has other features that JS does not have?
+ JavaScript has other features coming from Web APIs that it does not have natively?
  - Dev tools
    - Console
  - Web sockets
@@ -173,8 +173,10 @@ console.log("Me First!");
 /*
   - These background feature after some time gets some data.
     But this data is only available inside of that callback function. How to overcome that?
+    
+    Problem with Callbacks - 
     - Callback hell
-      - Error handling is not clean.
+    - Error handling is not clean.
     
   - http://csbin.io/async
 */
