@@ -2,7 +2,7 @@
 
 /*
  Closure:
- - It is many important concept based on lexical scope.
+ - It is very important concept based on lexical scope.
  - One of the Esoteric JavaScript concept.
  - Enables powerful pro-level functions like
    - once
@@ -64,7 +64,7 @@ It was one time running result of createFunction.
   - num. Actually code is inside of global execution context and JS not going inside
    createFunction
 - Why we even saving multiplyBy2 inside of function and not define globally?
- - because when function is returned from another function, it gets a bondu 
+ - because when function is returned from another function, it gets a bond
    property from Javascript we can ask for? that is - ?
 - Check the image
 */
@@ -108,13 +108,13 @@ function outer() {
 /*
  Calling a function outside of the function call it was defined.
  - When function is returned it somehow have access to counter variable, does it done by scope chain lookup? NO.
- - Truth is when a function is returned ,It also takes the all surrounding data on its backup (a little caveat) aka it copies Local memory of 
+ - Truth is when a function is returned ,It also takes the all surrounding data on its backpack (a little caveat) aka it copies Local memory of 
  its execution context.
 */
 function outer() {
   let counter = 0;
   function incerementCounter(){
-    return counter++;
+     counter++;
   }
   
   return incerementCounter;
@@ -189,7 +189,8 @@ myNameFunction(); // 1
  
  Scope Rule:
  It is called statical or Lexical Scoping. Where I save my
- function determines for the rest of that life, for the life of that function whenever it gets run whatever label it gets what daya it will have access to when that function runs.
+ function determines for the rest of that life, for the life of that function whenever 
+ it gets run whatever label it gets what data it will have access to when that function runs.
  
 */
 
