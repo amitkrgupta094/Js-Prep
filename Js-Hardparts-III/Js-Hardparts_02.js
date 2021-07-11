@@ -202,3 +202,48 @@ user1;
   - Without new keyword calling a function, this keyword would refer to window object.
   - Upper case your Functions.
 */
+
+
+
+// Misc Code Example: Inner function inside of main function
+function UserCreator(name, score){
+ this.name = name;
+ this.score = score;
+}
+
+UserCreator.prototype.increment = function(){
+ // here this loses reference to object and points to window object
+ function add1(){
+ this.score++;
+ }
+ // const add1 = function(){this.score++;}
+ add1()
+};
+
+UserCreator.prototype.login = function(){
+ console.log("login");
+};
+
+const user1 = new UserCreator(“Eva”, 9);
+
+
+
+user1.increment();
+
+
+
+// Fix: Use Arrow function as this would be set based on lexical scope.
+function UserCreator(name, score){
+ this.name = name;
+ this.score = score;
+}
+UserCreator.prototype.increment = function(){
+ // this points to Object now
+ const add1 = () => {this.score++}
+ add1()
+};
+UserCreator.prototype.login = function(){
+ console.log("login");
+};
+const user1 = new UserCreator(“Eva”, 9);
+user1.increment();
