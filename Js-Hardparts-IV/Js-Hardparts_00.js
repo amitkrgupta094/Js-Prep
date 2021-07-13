@@ -23,11 +23,11 @@
       code. (By changing global variables)
       
    - Solution? 
-     We need a style of coding which avoids above problems.
-      - Write tiny functions which have no consequence expect
-        on that line. It won't affect other parts of code.
+     - We need a style of coding which avoids above problems.
+     - Write tiny functions which have no consequence except
+       on that line it's running.It won't affect other parts of code.
       
-      So tool: Functional Programming
+    So tool: Functional Programming
 */
 
 
@@ -57,7 +57,16 @@
   Note: Read the deck again.
 */
 
-// Beautiful Functional Code
+// Beautiful Functional Code (It's like to-do list of an App.)
+/*
+ Just looking at below code,
+ 1 - Get player name
+ 2 - Get first name
+ 3 - Proper case it
+ 4 - add User label on it
+ 5 - Create a template (html) using it
+ 6 - Render it inside of DOM.
+*/
 pipe(
   getPlayerName,
   getFirstName,
@@ -67,5 +76,3 @@ pipe(
 )([{name: 'will', score: 3}])
 
 // And render it to the web page
-
-
