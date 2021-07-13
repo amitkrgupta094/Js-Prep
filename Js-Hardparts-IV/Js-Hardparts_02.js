@@ -1,70 +1,99 @@
- // Section 2: JavaScript Principles Review
+// Section 3: Higher Order Functions
 
-
-// Lecture 1: Executing JavaScript Code: A Review
+// Lecture 1: The Problem: Repetitive Functions
 /*
-  # What happens when JavaScript (Engine) runs the code?
-    When code starts running, we create a 
-    global execution context.It does 2 things:
-    
-    - Thread of execution (Parsing of JavaScript code)
-      - Going each line and execute the code. JavaScript have only one thread of
-        execution.
-    - Live memory of variables with data (Known as a Global Variable Environment)
-      even we can save code inside of memory.
-      
-    Note: 
-    1.When a function runs, It creates a Local Execution Context and thread of
-    execution weaves into it. It also gets a space/memory where we save data.
-    It gets deleted when function stops running.
-    
-    2. Label and value of the Label. Inside of function,
-    these are Parameter and Arguments.
-    
-    
+
+ Problem:
+ - We have seen from last lecture that we are changing
+   'functionality' that is done on array items. Rest of the
+   code is same.
+   
+ - Principle of Functional Programming:
+   - DO NOT REPEAT YOURSELF.
+   
+ - Solution?
+   - Pass function as an argument to another function?
 */
 
-const num = 3;
-const multiplyBy2 = (inputNumber) => {
-  const result = inputNumber*2;
-  return result;
-}
-
-const output = multiplyBy2(num);
-const newOutput = multiplyBy2(10);;
-
-
-// Lecture 2: Call Stack Review
-/*
- # Callstack:
- - JavaScript needs to keep track if every single
- function it calls. It is a data structure.
- - Every time function gets called, it gets added/pushed to stack.
- - After function finishes off we pop it off /remove from stack.
- - Whole file of code is wrapped inside of big function called Global function.
-*/
-
-
-// Lecture 3: Functions Review
-/*
-  # Functions:
-  - By example 1 and example 2 we can see that "functionality" is changing
-    a little bit and rest of code remains same. this is not very DRY.
-    
-  - Do we have any solution to this?
-    Maybe, HOF.
-*/
-
-
-// Example 1
-
-const copyArrayAndMultiplyBy2(array) => {
+const copyArrayAndManipulate = (array, instructions) => {
   const output = [];
   for (let i = 0; i < array.length; i++) {
-    output.push(array[i] * 2);
+    output.push(instructions(array[i]));
   }
   return output;
 }
+
+
+const myArray = [1,2,3];
+const multiplyBy2 = (input) => {
+  return input * 2;
+}
+
+
+
+// Lecture 2: Generalizing Functions
+/*
+ Generalize Functions:
+ - We can have a generalized function so that we pass in our
+   specific instruction only when we run the copyArrayAndManipulate
+   function.
+*/
+
+const result1 = copyArrayAndManipulate(myArray, multiplyBy2);
+const result2 = copyArrayAndManipulate(myArray, (num) => num + 3);
+const result3 = copyArrayAndManipulate(myArray, (num) => num / 2);
+
+
+result1;
+result2;
+result3;
+
+// Lecture 3: Higher Order Functions Review
+/*
+ Higher Order Functions:
+ #Note:
+ - In JS functions are first class object that means
+   - assigned to a variable
+   - assigned to properties of objects
+   - passed as arguments into functions
+   - returned as values from functions
+
+Callback vs Higher Order Functions:
+- HOF: copyArrayAndManipulate is a HOF, The function that takes in the function.
+       "Takes in a function or passes out a function."
+- Callbacks: multiplyBy2 is a callback function, The function we pass in is a callback function.
+
+Beneifits of HOF:
+- Easier to add features.
+- More readable.
+- Easier to debug.
+   
+*/
+
+// Lecture 4: Higher Order Functions Pair Programming
+/*
+ Practice: http://csbin.io/functional [Half Done]
+ Navigator and Driver [Pair Programming]
+ - One would be Navigator
+ - One would be Driver
+*/
+
+// Lecture 5: Arrow & Anonymous Functions
+/*
+ - condensed functions.
+ 
+ Anonymous Function: (inseting functions without a name)
+ - A little less readable.
+*/
+
+const multiplyBy3 = (input) => {return input*3}
+const op = multiplyBy3(3); // 9
+
+
+// Short hand version
+const multiplyBy4 = input => input*4;
+
+ 
 
 
 const myArray = [1,2,3];
