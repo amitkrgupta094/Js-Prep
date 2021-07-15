@@ -9,9 +9,9 @@
  - __proto__ & prototypes
  - new keyword, this keyword
  
- Core of Develment:
+ Core of JavaScript Code Execution:
  - Save data
- - Run code
+ - Runs code on a single threaded, in concurrent manner (have a single thread of execution)
  
  Example: Quiz Game
   - Where is the functionality when I need it?
