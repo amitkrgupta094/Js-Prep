@@ -5,7 +5,8 @@
   - setTimeout is an outside function / Facades.
   - Keeping track of setTimeout Facde is hard. can we map it?
   - Promise:
-    When you trigger a background process does not just spit it out but map it inside of JavaScript Memory.
+    An Object to that can be modified on future based on a background process.
+    It can retrieved via a method on a callback function.
     
   - Mapping
     XHR/Fetch --> Object (Promise) --> Populate Data / Use Data in JS.
