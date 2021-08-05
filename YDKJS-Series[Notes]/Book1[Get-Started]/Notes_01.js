@@ -1,10 +1,4 @@
 // Why I'm reading this book?
-/*
-  1. I want to build great web products/libraries/plugins which needs deep knowledge 
-     of underlying principles of Js and Programming in General.
-  2. I want to earn more [aka crack a good company] as a developer and have a decent living.
-
-*/
 
 
 // Forward by Brian Holt (Currently working on Stripe)
