@@ -1,4 +1,4 @@
-TechBlogs
+#TechBlogs you need to read to build a System (also helpful for system design interview for frontend and backend)
 
 https://netflixtechblog.com/ 
 https://eng.uber.com/ 
