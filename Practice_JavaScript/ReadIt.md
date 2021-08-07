@@ -19,8 +19,8 @@
 
 
 ## Advance Books 
-[You feel good with concepts like: this, prototypes, prototypal inheritance, module pattern, scope, scope chain, this, async javascript patterns ++]
-[Warning: Trying to read these without practice would lead to immense mental pain and discouragement, make sure you do your homework]
+* You feel good with concepts like: this, prototypes, prototypal inheritance, module pattern, scope, scope chain, this, async javascript patterns ++. <br/>
+* Warning: Trying to read these without practice would lead to immense mental pain and discouragement, make sure you do your homework.
 
 - [ ] Speaking JS By Dr. Axel Rauschmayer
 - [ ] Exploring ES6 By Dr. Axel Rauschmayer
