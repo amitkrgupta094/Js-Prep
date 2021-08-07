@@ -3,10 +3,10 @@
 
 ## Noob Phase 
 - [ ] JavaScript For Kids by Nick Morgan 
+- [ ] Any Youtube tutorial that helps you learn basics of JavaScript
 - [ ] Get Programming with JavaScript by John R. Larsen
 - [ ] Eloquent JavaScript by Marijn Haverbeke
 - [ ] The Principles of Object-Oriented JavaScript by Nicholas C. Zakas
-- [ ] Any Youtube tutorial that helps you learn basics of JavaScript
 
 
 ## Intermediate Books
@@ -15,11 +15,12 @@
 - [ ] this & Object Prototypes By Kyle Simpson
 - [ ] Async & Performance By Kyle Simpson
 - [ ] ES6 & Beyond By Kyle Simpson
-- [ ] Js: The Good Parts
+- [ ] Js: The Good Parts Douglas Crockford
 
 
 ## Advance Books 
 [You feel good with concepts like: this, prototypes, prototypal inheritance, module pattern, scope, scope chain, this, async javascript patterns ++]
+[Warning: Trying to read these without practice would lead to immense mental pain and discouragement, make sure you do your homework]
 
 - [ ] Speaking JS By Dr. Axel Rauschmayer
 - [ ] Exploring ES6 By Dr. Axel Rauschmayer
@@ -40,7 +41,7 @@
 
 
 # Video Tutorials 
-[You need to be atleast at mid level phase]
+[You need to be atleast know the basics of JS to go through these]
 - [ ] Getting Started with JavaScript, v2 ✅
 - [ ] Deep JavaScript Foundations, v3 ✅
 - [ ] JavaScript: The Recent Parts ✅
