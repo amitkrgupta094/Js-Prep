@@ -31,6 +31,7 @@
 - [ ] Object Oriented JavaScript by Stoyan Stefanov
 - [ ] JavaScript Design Patterns by Stoyan Stefanov
 - [ ] Design Patterns in JavaScript by Addy Osmani
+- [ ] [Overview lectures](http://dmitrysoshnikov.com/)
 
 
 ## Resources to reference 
