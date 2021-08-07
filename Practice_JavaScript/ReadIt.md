@@ -5,6 +5,7 @@
 - [ ] JavaScript For Kids by Nick Morgan 
 - [ ] Any Youtube tutorial that helps you learn basics of JavaScript
 - [ ] Get Programming with JavaScript by John R. Larsen
+- [ ] [JavaScript by Kirupa](https://www.kirupa.com/javascript/learn_javascript.htm)
 - [ ] Eloquent JavaScript by Marijn Haverbeke
 - [ ] The Principles of Object-Oriented JavaScript by Nicholas C. Zakas
 
