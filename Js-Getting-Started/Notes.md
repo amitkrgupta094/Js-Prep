@@ -2,6 +2,11 @@
 
 ## Lecture 1: Introduction
 
+### Details about Author
+Kyle's handle: getify @gmail @github @twitter.
+Companion to this course: 
+https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/README.md
+  
 ### Hello World Code
 
 ```javascript
