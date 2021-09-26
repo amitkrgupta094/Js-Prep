@@ -1,12 +1,9 @@
 
 
-// Kyle Simpson
-
-// Lecture 1 - Introduction
+// Lecture 1: Introduction
 /*
   Kyle's handle: getify @gmail @github @twitter.
   Companion to this course: https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/README.md
-  
 */
 
 // Hello world program
@@ -22,7 +19,10 @@ function whoAmI(myName, myNickname, myAge) {
 
 whoAmI(teacher, twitterHandle, age);
 
-// Lecture 2 - Course Overview
+
+
+
+// Lecture 2: Course Overview
 
 /*
   - Programming Primer (in Js)
@@ -41,7 +41,7 @@ whoAmI(teacher, twitterHandle, age);
 
 
 
-// Lecture 3 - Values
+// Lecture 3: Values
 // Examples of varities of values
 
 // In Js there is one type of numbers "number"
@@ -60,7 +60,8 @@ null;
 undefined;
  
 // Non primitive values
-// Primitive means literal value rather a collection of values
+// Primitive means literal value rather a collection of values.
+// Non Primitive means collection of values.
 
 // Array - collection of values with numbered locations.
 [1, 2, 3];
@@ -68,14 +69,13 @@ undefined;
 // object - collection of values, values are positioned with names/string.
 {name: 'Kyle'};
 
-// these values reperesent task we want to accomplish and they have intrinsic behaviour attached with them.
+// These values reperesent task we want to accomplish and they have intrinsic behaviour attached with them.
 
 
-// Lecture 4 - Operations
-// + operator is overloaded means it does different things
-// depending on data structure.
+// Lecture 4: Operations
+// + operator is overloaded means it does different things based on type of data structure.
 // Operators types = Binary Operators, Unary Operators.
-// In Js there are 2 types of equality operator.
+// In Js there are 2 types of equality operator: ==, ====
 
 3 + 4;
 43 - 1;
@@ -91,7 +91,7 @@ undefined;
 true || false;
 
 
-// Lecture 5 - Types
+// Lecture 5: Types
 // type - kind of a value. typeof operator used to evaluate "kind" of value.
 
 typeof 42; // "number"
@@ -103,7 +103,7 @@ typeof null; // "object" - a bug
 typeof [1,2,3]; // "object"
 
 
-// Lecture 6 - Variables
+// Lecture 6: Variables
 
 // variable - place in memory. symbolic representation. 
 // = operator is used to do assignment operation.
@@ -130,16 +130,16 @@ age += 2;
 age; // 42
 
 
-// Lecture 7 - Expressions vs Statements
+// Lecture 7: Expressions vs Statements
 
-// Expression - it is like a phrase
-// Staments - complete sentence
+// Expression - it is like a phrase.
+// Staments - complete sentence.
 
 var age = 39;
 age = 1 + ( age * 2);
 
 
-// Lecture 8 - If & Else -Decisions making in code
+// Lecture 8 : If & Else (Decisions making in code)
 
 // if statement
 var age = 39;
@@ -161,7 +161,7 @@ if (isEnrolled()) {
 
 
 
-//  Lecture 9 - Loops - Operations that we have to do multiple times.
+//  Lecture 9: Loops (Operations that we have to do multiple times.)
 
 var students = ["Marc", "Brandon"];
 function greetStudent(student) {
@@ -188,7 +188,7 @@ while (students.length > 0 ) {
 }
 
 
-// Lecture 10 - Functions (Procedure)
+// Lecture 10: Functions (Procedure)
 // Using a code multiple times from different places.
 // `` = Interpolated string.
 // A function can return things.
@@ -271,11 +271,11 @@ addFavoriteBook("You Don't Know JS");
 printFavoriteBooks();
 
 
-// Summary
+// ================================================================ //
 
 // Type System
 
-// Lecture 1 -  Primitive Types
+// Lecture 1: Primitive Types
 /*
   - Types/Coercion
   - Scope/Closure
@@ -338,7 +338,7 @@ typeof v; // "object"
 
 
 
-// Lecture 2 - NaN ("not a number")
+// Lecture 2: NaN ("not a number")
 
 var greeting = "Hello, class!";
 var something = greeting / 2; // ?!?!?
@@ -348,10 +348,10 @@ Number.isNaN(something); // true
 
 Number.isNaN( greeting ); // false
 
-// whenever you do maths, test for NaN cases
+//IMPORTANT: Whenever you do mathematical operation in JavaScript, Test for NaN cases for edge cases.
 
 
-// Lecture 3 -  new
+// Lecture 3: new keyword
 /*
  Use new:
  - Object()
@@ -375,7 +375,7 @@ myGPA;
 
 
 
-// Lecture 4 - Coercion - converting one type to another.
+// Lecture 4: Coercion  (converting one type to another.)
 // Coercion: Implicit | Explicit
 
 
@@ -396,8 +396,7 @@ S + N = S
 S + S = S
 */
 
-// DOM values are usually strings
-// so coercion is required
+// DOM values are usually strings hence coercion is required.
 var fakeDOMValue = "hey";
 function addAStudent(numStudents) {
   return fakeDOMValue + 1;
@@ -405,7 +404,7 @@ function addAStudent(numStudents) {
 
 
 
-// Lecture 5 - Booleans
+// Lecture 5: Booleans
 /*
 Falsy: 
 ""
@@ -464,14 +463,13 @@ if(workshopEnrollment1 < workshopEnrollment2) {
 }
 
 
-// Lecture 6 - Coercion Best Practices
+// Lecture 6: Coercion Best Practices
 /*
  - A quality JS program embraces coercion, making sure the types involved in every operation are clear.
- - 
 */
 
 
-// Lecture 7 - Equality
+// Lecture 7: Equality
 /*
 == vs ===
 - == checks value (loose)
@@ -485,7 +483,7 @@ Above things are wrong.
 
 - if types are same , double or triple equal does the same.
 - Make your types obvious.
-- If types are different they have different behaviour.
+- If types are different, they have different behaviour.
 - null and undefined are coerively equal.
 */
 
@@ -501,26 +499,24 @@ var workshopEnrollment2 = workshopEnrollment1 + 0;
 
 
 
-// Lecture 8 - Types Summary
+// Lecture 8: Types Summary
 /*
-Question to ask -
-- Is coercion helpful for me?
+Question to ask: Is coercion helpful for me?
 - == is not about comparisons with unknown types. (Kyles view)
 - Make your types obvious in your program, you can use == operator,
 
 */
 
-
+// ======================================================= //
 // Scope and Closure
 
-// Lecture 1 - Scope
+// Lecture 1: Scope
 /*
  - Nested scope
  - Closure
  
  Scope and how they work?
- Where Js engine looks for things. rules for finding the variables
- is called scope. 
+ Where Js engine looks for things. rules for finding the variables is called scope. 
 */
 
 x = 42;
@@ -545,7 +541,7 @@ topic; // "React"
 
 
 
-// Lecture 2 - Undefined vs Undeclared 
+// Lecture 2: Undefined vs Undeclared 
 
 /*
  - Theyre very distinct things. 
@@ -553,12 +549,11 @@ topic; // "React"
 
 
 
-// Lecture 3 - Function Expressions
+// Lecture 3: Function Expressions
 
 /*
  A funciton that assigned as a value to somewhere. 
- 
- - Kyle says you should have named funciton expression.
+ - Kyle says you should name funciton expression. why? because it makes it appear in Error trace.
 */
 
 
@@ -587,8 +582,8 @@ var keyHandler = function keyHandler() {
 // Promises - Check the deck.
 
 
-// Lecture 4 - IIFEs - Immediadely Invoked Function Expression
-// Helps create a new block of scope untouched the global variables
+// Lecture 4: IIFEs (Immediadely Invoked Function Expression)
+// Helps create a new block of scope untouched the global variables, avoids polluting the outer scope.
 
 (function anotherTeacher() {
   var teacher = "Suzy";
@@ -601,8 +596,9 @@ console.log(teacher)
 
 
 
-// Lecture 4 - Block Scoping (Instead of an IIFE)
+// Lecture 4: Block Scoping (Instead of an IIFE)
 
+// How to have block scoping in your code? use let/const with {}.
 // use let / const keyword
 // Block scoping is used to make things private (General programming principle.) You can still use on funciton level and use let in block.
 
@@ -626,13 +622,12 @@ function diff(x,y) {
 
 
 
-// Lecture 5 - Closure
+// Lecture 5: Closure
 /*
  closure is when a function "remembers" the variables outside of it, even if you pass the function elsewhere.
- 
  We observe this when we pass function around / treat it as a value.
  
- "Make the scope alive - closure"
+ "Make the scope alive - closure" but actually scope does not become alive. 
 */
 
 // function - passed as value
@@ -656,10 +651,10 @@ function ask(question) {
 
 var myQuestion = ask("What is closure again?");
 
-myQuestion; // "What is closure again?"
+myQuestion(); // "What is closure again?"
 
 
-
+// ================================================================================ //
 // this & Prototypes
 
 // Lecture 1 - this
@@ -671,10 +666,8 @@ myQuestion; // "What is closure again?"
 
 this -
 A function's this references the execution context for that call, determined entirely by how the function was called.
-
 A this-aware function can thus have a different context each time it's called, which makes it more flexible & reusable.
-
-we can change this context/
+we can change "this" context.
 */
 
 
@@ -705,12 +698,12 @@ function otherClass() {
 otherClass(); // 'Suzy' 'Why'
 
 
-// Lecture 2 - Prototypes
+// Lecture 2: Prototypes
 /*
  An object where any object is linked it.
 */
 
-// Lecture 3 - class
+// Lecture 3: class
 /*
 - layered on top of prototype system.
 - Looks more like classical class system.
@@ -780,6 +773,7 @@ function fakeAjax(url,cb) {
 loadBooks(new Bookshelf())
 
 
+// ================================================================= // 
 // Final Words - Pillars of Js Summary
 
 /*
@@ -791,9 +785,7 @@ loadBooks(new Bookshelf())
  
  this/Prototype
  - class based system
- 
- 
 */
 
 
-
+Revised: 2
